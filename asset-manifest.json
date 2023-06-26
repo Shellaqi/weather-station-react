@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/weather-station-react/static/css/main.959f05e9.css",
+    "main.js": "/weather-station-react/static/js/main.f2c2d5e7.js",
+    "static/media/warm-bg.jpg": "/weather-station-react/static/media/warm-bg.a7f83012aa30f33e19ee.jpg",
+    "static/media/cold-bg.jpg": "/weather-station-react/static/media/cold-bg.a3f3f533d3caea133b5f.jpg",
+    "index.html": "/weather-station-react/index.html",
+    "main.959f05e9.css.map": "/weather-station-react/static/css/main.959f05e9.css.map",
+    "main.f2c2d5e7.js.map": "/weather-station-react/static/js/main.f2c2d5e7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.959f05e9.css",
+    "static/js/main.f2c2d5e7.js"
+  ]
+}
