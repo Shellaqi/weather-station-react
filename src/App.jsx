@@ -8,12 +8,12 @@ function App() {
   const [state,setState] = useContext(AppContext);
 
   return (
-    <div className='app'
-      // className={
-      //   (state?.selctedCityInfo?.main?.temp > Number(12 + 273.15))
-      //     ? 'app warm'
-      //     : 'app'
-      // }
+    <div 
+      className={
+        (state?.selctedCityInfo?.main?.temp > Number(12 + 273.15))
+          ? 'app warm'
+          : 'app'
+      }
     >
 
       <main>

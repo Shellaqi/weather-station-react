@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
 import { AppContext } from '../context/AppContext';
+import fetchCityWeatherInfo from '../common/fetchCityWeatherInfo';
 
 export default function Headers() {
     const [state, setState] = useContext(AppContext);
@@ -37,11 +38,12 @@ export default function Headers() {
                         }
                     `
                     }
-                    onClick={() => {
-                        // const result = await fetchCityWeatherInfo((appState?.search || '').toLowerCase())
-                        // immutableSetState((draft) => {
-                        //     draft.selctedCityInfo = result;
-                        // });
+                    onClick={async() => {
+                        const result = await fetchCityWeatherInfo((state?.search || '').toLowerCase())
+                        console.log('result:',result)
+                        setState((draft) => {
+                            draft.selctedCityInfo = result;
+                        });
                     }}
                 >
                     Find
